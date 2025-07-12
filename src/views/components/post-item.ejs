@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/post-item.css" />
+
+<div class="post-item">
+  <a href="/posts/<%= post.id %>" class="post-link">
+    <p class="post-id"><strong>ID:</strong> <%= post.id %></p>
+    <p><strong>URL:</strong> <%= post.url %></p>
+    <p class="post-location"><strong>Location:</strong> [<%= post.loc.x %>, <%= post.loc.y %>]</p>
+  </a>
+  <form action="/posts/<%= post.id %>/delete" method="POST" class="delete-form">
+    <button type="submit" class="delete-button" onclick="return confirm('Are you sure you want to delete this post?')">
+      Delete
+    </button>
+  </form>
+</div>

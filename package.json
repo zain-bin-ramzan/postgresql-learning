@@ -1,0 +1,30 @@
+{
+  "name": "simple-express-server",
+  "version": "1.0.0",
+  "description": "A simple Express server that serves an HTML file.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node-pg-migrate",
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down",
+    "migrate:create": "node-pg-migrate create",
+    "test": "jest --no-cache"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "jest": "^30.0.3",
+    "node-pg-migrate": "^7.9.1",
+    "pg": "^8.16.0",
+    "supertest": "^7.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "author": "",
+  "license": "ISC"
+}

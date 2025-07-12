@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/css/post-list.css" />
+
+<div class="posts-container">
+  <h2>All Posts</h2>
+
+  <% if (posts.length === 0) { %>
+  <p class="no-posts">No posts found. Add your first post above!</p>
+  <% } else { %> <% posts.forEach(post => { %> <%- include('./post-item', { post }) %> <% }) %> <% } %>
+</div>

@@ -1,0 +1,64 @@
+/* Post Item Styles */
+.post-item {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: #ddd;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.post-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item p {
+  margin: 8px 0;
+}
+
+.post-item a {
+  word-break: break-all;
+}
+
+.post-location {
+  color: #666;
+  font-style: italic;
+}
+
+.post-id {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.delete-form {
+  margin-top: 10px;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+}

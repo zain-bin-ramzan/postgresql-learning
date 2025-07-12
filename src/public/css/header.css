@@ -1,0 +1,34 @@
+/* Header Styles */
+.main-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.main-header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.main-header nav a:hover {
+  text-decoration: none;
+  border-bottom-color: #0066cc;
+}
